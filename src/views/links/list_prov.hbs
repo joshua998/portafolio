@@ -1,0 +1,27 @@
+<div class="conteiner p-4">
+    <a href="/links/add_prov" btn> registro </a>
+    <div class="row">
+        {{#each links}}
+        <div class="col-3">
+            
+            <div class="card-texzt-center">
+                
+                <div class="card-body">
+                        <h3 class="card-title text-uppercase"></h3>
+                             <p>{{rut_empresa}} </p>
+                             <p>{{nombre_empresa}}</p>
+                            <a href="/links/delete_prov/{{rut_empresa}}" class="btn btn-danger">eliminar</a>
+                            <a href="/links/edit_prov/{{rut_empresa}}" class="btn btn-danger">Modificar</a>
+                        </h3>
+                </div>
+            </div>
+        </div>
+        {{else}}
+                <div class="col-md-4 mx-auto">
+                    <div class="card card-body text-centar">
+                        <p>No Hay Proveedores Registrados</p>
+                    </div>
+                </div>
+        {{/each}}
+    </div>
+</div>

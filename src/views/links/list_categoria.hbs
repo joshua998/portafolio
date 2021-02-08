@@ -1,0 +1,27 @@
+<div class="conteiner p-4">
+    <a href="/links/add_categoria" btn> registro </a>
+    <div class="row">
+        {{#each links}}
+        <div class="col-3">
+            
+            <div class="card-texzt-center">
+                
+                <div class="card-body">
+                        <h3 class="card-title text-uppercase"></h3>
+                             <p>{{id_categoria}} </p>
+                             <p>{{nombre_categoria}}</p>
+                           
+                            <a href="/links/edit_categoria/{{id_categoria}}" class="btn btn-danger">Modificar</a>
+                        </h3>
+                </div>
+            </div>
+        </div>
+        {{else}}
+                <div class="col-md-4 mx-auto">
+                    <div class="card card-body text-centar">
+                        <p>No Hay Categorias  Registradas</p>
+                    </div>
+                </div>
+        {{/each}}
+    </div>
+</div>

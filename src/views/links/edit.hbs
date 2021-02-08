@@ -1,0 +1,28 @@
+<div class="conteiner p-4">
+<div class="row">
+    <div class="cold-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                    <form action="/links/edit/{{link.rut_usuario}}" method="POST">
+                    <div class="form-group">
+                    <input type="text" value="{{link.rut_usuario}}" class="form-control" name="rut_usuario" placeholder="rut" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="text" value="{{link.nombre_usuario}}" class="form-control"  name="nombre_usuario" placeholder="nombre" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="password" value="{{link.contrasena_usuario}}" class="form-control"  name="contrasena_usuario" placeholder="contraseña" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="password" value="{{link.nombre_trabajador_usuario}}" class="form-control" name="nombre_trabajador_usuario" placeholder="usuario" autofocus>
+                    </div>
+
+                    <button class="button">save</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="conteiner p-4">
+<div class="row">
+    <div class="cold-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                    <form action="/links/edit_categoria/{{link.id_categoria}}" method="POST">
+                    <div class="form-group">
+                    <input type="text" value="{{link.id_categoria}}" class="form-control" name="id_categoria" placeholder="ID Categoria" autofocus>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="text" value="{{link.nombre_categoria}}" class="form-control"  name="nombre_categoria" placeholder="Nombre Categoria " autofocus>
+                    </div>
+
+                    
+                    </div>
+
+                    <button class="button">save</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

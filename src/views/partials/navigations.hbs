@@ -1,0 +1,46 @@
+
+<nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #ABEBC6;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        {{#if user }}
+        <!-- todo lo que el usuario logeado puede ver!-->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/links/principal_categoria">Categoria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links/principal_prod">Producto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links/principal_prov ">Proveedor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links/principal_rep_prov">Representante Proveedor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links/principal_tipo_pago">Tipo De Pago</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links/principal_tipo_usu">Tipo De Usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">cerrar sesion</a>
+        </li>
+
+        {{/if}}
+        <!-- todo lo que el usuario no logeado puede ver!-->
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,60 @@
+<div class="conteiner p-4">
+    <div class="row">
+        <div class="cold-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/links/add_prod" method="POST">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nombre_prod" placeholder="Nombre " autofocus>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="detalle_prod" placeholder="Detalle "
+                                autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="cantidad_prod" placeholder="Catidad"
+                                autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="valor_prod" placeholder="valor" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="fecha_prod" placeholder="fecha" autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="rut_empresa" id="rut_empresa">
+
+                                {{#each proveedor}}
+                                <tr>
+                                    <option value={{rut_empresa}}> {{nombre_empresa}}</option>
+
+                                </tr>
+                                {{/each}}
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="id_categoria" id="id_categoria">
+
+                                {{#each provlist}}
+                                <tr>
+                                    <option value={{id_categoria}}> {{nombre_categoria}}</option>
+
+                                </tr>
+                                {{/each}}
+                            </select>
+                        </div>
+
+
+                        <button class="button">save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
